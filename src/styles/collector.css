@@ -1,0 +1,61 @@
+.rootModel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 100%);
+    grid-template-areas: "header header"
+                         "headPhotoContent headPhotoContent"
+                         "textHeaderContent textHeaderContent"
+                         "mainPhotoContent mainPhotoContent"
+                         "textPrice textPrice"
+                         "priceContent priceContent"
+                         "blockСontacts blockСontacts"
+                         "footerPhotoContent footerPhotoContent"
+                         "textFooterContent textFooterContent"
+                         "aboutMe aboutMe";
+    font-family: "Comfortaa", "PT Sans Caption", sans-serif;
+    grid-gap: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rootModel div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.header{
+    grid-area: header;
+}
+
+.headPhotoContent{
+    grid-area: headPhotoContent;
+}
+.textHeaderContent {
+    grid-area: textHeaderContent;
+}
+.mainPhotoContent{
+    grid-area: mainPhotoContent;
+}
+.textPrice{
+    grid-area: textPrice;
+}
+.priceContent{
+    grid-area: priceContent;
+}
+.blockСontacts{
+    grid-area: blockСontacts;
+}
+.footerPhotoContent{
+    grid-area: footerPhotoContent;
+}
+.textFooterContent{
+    grid-area: textFooterContent;
+}
+.aboutMe{
+    grid-area: aboutMe;
+}
