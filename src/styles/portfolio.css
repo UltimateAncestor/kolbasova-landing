@@ -1,0 +1,9 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Darker Grotesque", serif;
+    font-size: 2em;
+    color: lightslategray;
+    margin: 2%;
+}
