@@ -1,0 +1,27 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    height: 5em;
+    width: 100%;
+    background-color: lightslategrey;
+    margin-top: 2em;
+    margin-left: 0;
+    align-items: center;
+    font-family: 'Lobster', cursive;
+    font-size: 1em;
+    color: #fdf5e8;
+}
+
+.wrapper>div{
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+    width: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper{
+        font-size: 12pt;
+        height: 3em;
+    }
+}

@@ -1,0 +1,38 @@
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-gap: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.photoWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.photoWrapper > span{
+    opacity: 0;
+    position: absolute;
+    font-family: 'Pacifico', cursive;
+}
+
+.photoWrapper:hover > span{
+    opacity: 1;
+    cursor: pointer;
+    transition: 0.5s;
+    font-size: 2em;
+    color: #f7dfb5;
+    border: solid 2px #f7dfb5;
+    background-color: #7b6869;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 1;
+}
+
+.photoWrapper:hover > img{
+    opacity: 0.7;
+    transition: 0.5s;
+}

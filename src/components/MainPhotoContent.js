@@ -6,7 +6,7 @@ import modalStyle from "../styles/modal.css";
 
 Modal.setAppElement('#root');
 
-export default class _MainPhotoContent extends React.Component{
+export default class mainPhotoContent extends React.Component{
 
     constructor(props){
         super(props);

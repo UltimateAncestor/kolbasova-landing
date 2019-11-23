@@ -1,13 +1,22 @@
 import React from 'react'
+import IFrame from 'react-iframe'
+import style from '../styles/schedule.css'
+import {Bounce} from "react-reveal";
 
-export default class ModalWindow extends React.Component{
+export default class Schedule extends React.Component{
     render() {
         return(
-            <div>
-            <iframe
-                src="https://calendar.google.com/calendar/embed?src=55atob1k1rv6m7mjkp9nb0t8v8%40group.calendar.google.com&ctz=Europe%2FMoscow"
-                style="border: 0" width="800" height="600" frameBorder="0" scrolling="no"/>
+            <Bounce right>
+            <div className={style.calendarWrapper}>
+            <IFrame
+                src="https://calendar.google.com/calendar/embed?src=krkolbasova%40gmail.com&ctz=Europe%2FMoscow"
+                style="border: 0"
+                width="95%"
+                height="600"
+                frameborder="0"
+                scrolling="no"/>
             </div>
+            </Bounce>
         )
     }
 }

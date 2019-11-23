@@ -69,14 +69,6 @@
     transition: 800ms;
 }
 
-.underlining{
-    opacity: 0;
-    display: block;
-    left: 0;
-    width: 0;
-    background-color: #616161;
-}
-
 .menu__item:hover > .underlining{
     opacity: 1;
     position: relative;
@@ -99,4 +91,10 @@
 .menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .menu__btn{
+        display: none;
+    }
 }

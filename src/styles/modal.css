@@ -1,0 +1,80 @@
+.modalWrapper{
+    position: absolute;
+    outline: none;
+}
+
+.modalVertical{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+.modalVertical>img{
+    position: absolute;
+    width: 470px;
+    height: 700px;
+    border: solid 3px lavender;
+    outline: none;
+}
+
+.modalHorizontal{
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    outline: none;
+}
+
+.modalHorizontal>img{
+    position: absolute;
+    width: 700px;
+    height: 470px;
+    border: solid 3px lavender;
+    outline: none;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(201, 195, 195, 0.85);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .modalVertical{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border: none;
+        outline: none;
+    }
+    .modalVertical>img{
+        position: absolute;
+        width: 740px;
+        height: 1100px;
+        border: solid 3px lavender;
+        outline: none;
+    }
+
+    .modalHorizontal{
+        position: absolute;
+        left: 1%;
+        top: 20%;
+        transform: translate(-50%, -50%);
+        outline: none;
+        border: none;
+    }
+
+    .modalHorizontal>img{
+        position: absolute;
+        width: 950px;
+        height: 650px;
+        border: solid 3px lavender;
+        outline: none;
+    }
+}

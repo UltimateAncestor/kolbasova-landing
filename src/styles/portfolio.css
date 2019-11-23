@@ -7,3 +7,9 @@
     color: lightslategray;
     margin: 2%;
 }
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper{
+        font-size: 15pt;
+    }
+}

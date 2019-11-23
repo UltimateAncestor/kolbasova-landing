@@ -3,6 +3,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-gap: 15px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .photo_wrapper{

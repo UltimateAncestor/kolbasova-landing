@@ -1,0 +1,62 @@
+.wrapper{
+    display: grid;
+    grid-auto-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 1px;
+    grid-template-areas: "photo text"
+                         "photo text"
+                         "connect_link connect_link";
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 26pt;
+    color: dimgray;
+}
+
+.photo_container{
+    grid-area: photo;
+}
+
+.text_container{
+    grid-area: text;
+}
+
+.connectLinkContainer{
+    grid-area: connect_link;
+    height: 120px;
+}
+
+.connectLink{
+    border: solid 1px dimgray;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 1%;
+    margin-top: 50px;
+}
+
+.connectLink:hover{
+    background-color: #6e6b6b;
+    color: floralwhite;
+    transition: background-color 530ms;
+}
+
+.wrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1px;
+    padding: 1px;
+}
+
+.wrapper > span{
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper{
+        font-size: 21pt;
+    }
+
+    .connectLinkContainer{
+        grid-area: connect_link;
+        height: 90px;
+    }
+}

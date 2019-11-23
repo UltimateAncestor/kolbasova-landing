@@ -1,0 +1,26 @@
+.priceContentWrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.priceContentWrapper > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 2em;
+    color: dimgray;
+    border-radius: 15px;
+    border: solid 2px lightslategray;
+    margin: 1%;
+    padding: 2%;
+    box-shadow:  0 0 10px rgba(0,0,0,0.3);
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .priceContentWrapper{
+        font-size: 9pt;
+    }
+}

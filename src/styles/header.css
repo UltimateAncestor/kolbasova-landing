@@ -5,5 +5,11 @@
     font-family: "Darker Grotesque", serif;
     font-size: 2em;
     color: lightslategray;
-    margin: 2%;
+    height: 100%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .wrapper{
+        font-size: 15pt;
+    }
 }
