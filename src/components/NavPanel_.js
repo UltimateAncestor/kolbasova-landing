@@ -28,9 +28,6 @@ export default class NavPanel extends React.Component{
                         <Link to={'contacts'} spy={true} smooth={true} duration={500}>Контакты</Link>
                     </li>
                     <li className={style.menu__item}>
-                        <Link to={'schedule'} spy={true} smooth={true} duration={500}>Расписание</Link>
-                    </li>
-                    <li className={style.menu__item}>
                         <Link to={'about'} smooth={true} duration={500}>Обо мне</Link>
                 </li>
                 </ul>
