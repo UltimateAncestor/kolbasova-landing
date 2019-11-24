@@ -10,13 +10,11 @@ import PriceContent from './PriceContent'
 import ContactsHeader from "./ContactsHeader";
 import ContactsContent from "./ContactsContent";
 import AboutMeContent from "./AboutMeContent";
-import Schedule from "./Schedule";
-import ScheduleHeader from "./ScheduleHeader";
 import AboutMeHeader from "./AboutMeHeader";
 import FooterPhotoContent from "./FooterPhotoContent";
 import HorizontalPhotos from "./HorizontalPhotos";
 import Footer from "./Footer";
-import mainPhotoContent from "./MainPhotoContent";
+import MainPhotoContent from "./MainPhotoContent";
 
 import v1 from "../public/pictures/main_site/photo/vertical/web_view/gif/1.gif";
 import v2 from "../public/pictures/main_site/photo/vertical/web_view/gif/2.gif"
@@ -185,7 +183,7 @@ export default class Collector extends React.Component{
                     </div>
                     <div className={style.mainPhotoContent}>
                         <HorizontalPhotos photos={horizontalPhotosTop}/>
-                        <mainPhotoContent photos={photo_web_view}/>
+                        <MainPhotoContent photos={photo_web_view}/>
                         <HorizontalPhotos photos={horizontalPhotosBottom}/>
                     </div>
                     <div className={style.textPrice}>
@@ -197,8 +195,6 @@ export default class Collector extends React.Component{
                     <div className={style.blockСontacts}>
                         <ContactsHeader/>
                         <ContactsContent/>
-                        <ScheduleHeader/>
-                        <Schedule/>
                     </div>
                     <div className={style.footerPhotoContent}>
                         <FooterPhotoContent/>
